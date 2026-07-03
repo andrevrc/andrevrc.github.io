@@ -1,0 +1,24 @@
+---
+import profile from "../data/profile.json";
+---
+
+<section class="flex flex-col items-center justify-center px-20 py-20 gap-6 text-center">
+  <span class="font-mono text-sm text-accent-primary">
+    ~ $ ./hello.sh
+  </span>
+
+  <h1 class="font-heading text-6xl md:text-7xl text-foreground-primary leading-none">
+    {profile.name}
+  </h1>
+
+  <p class="font-body text-lg text-foreground-secondary max-w-xl mx-auto">
+    {profile.tagline}
+  </p>
+
+  <div class="flex items-center gap-3 px-5 py-3 rounded-md bg-surface-primary">
+    <span class="size-2 rounded-full bg-accent-warm"></span>
+    <span class="font-mono text-xs text-foreground-secondary">
+      studying: {profile.currently}
+    </span>
+  </div>
+</section>

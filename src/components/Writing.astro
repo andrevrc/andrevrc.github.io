@@ -1,0 +1,59 @@
+---
+const posts = [
+  {
+    category: "carreira",
+    title: "O que aprendi depois de 5 anos como dev",
+    description: "Reflexões sobre código, carreira e comunidade depois de meia década na área.",
+    date: "Jun 2026",
+    readTime: "8 min",
+  },
+  {
+    category: "security",
+    title: "Construindo sistemas seguros com IA",
+    description: "Como integrar modelos de linguagem sem abrir brechas de segurança.",
+    date: "Mai 2026",
+    readTime: "12 min",
+  },
+  {
+    category: "ai",
+    title: "Por que estou estudando alignment",
+    description: "Notas de estudo sobre segurança de IA e alinhamento de valores.",
+    date: "Abr 2026",
+    readTime: "6 min",
+  },
+];
+---
+
+<section class="flex flex-col px-24 py-20 gap-8 bg-surface-primary" id="writing">
+  <span class="font-mono text-xs text-accent-primary">
+    ~ $ ls writing/
+  </span>
+
+  <h2 class="font-heading text-3xl text-foreground-primary">
+    Escrita
+  </h2>
+
+  <div class="flex flex-col gap-3 w-full">
+    {posts.map((post) => (
+      <a href="/writing" class="flex flex-col gap-3 p-6 rounded-lg bg-surface-card text-left no-underline hover:ring-1 ring-accent-primary/30 transition-all">
+        <span class="font-mono text-xs text-accent-primary">
+          {post.category}
+        </span>
+        <h3 class="font-heading text-xl text-foreground-primary">
+          {post.title}
+        </h3>
+        <p class="font-body text-sm text-foreground-secondary">
+          {post.description}
+        </p>
+        <div class="flex gap-4">
+          <span class="font-mono text-xs text-foreground-secondary">
+            {post.date}
+          </span>
+          <span class="font-mono text-xs text-foreground-secondary">
+            {post.readTime} read
+          </span>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>

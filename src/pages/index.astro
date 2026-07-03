@@ -1,0 +1,34 @@
+---
+import Base from "../layouts/Base.astro";
+import profile from "../data/profile.json";
+import experience from "../data/experience.json";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Writing from "../components/Writing.astro";
+import Now from "../components/Now.astro";
+---
+
+<Base title={profile.name} description={profile.tagline}>
+  <Hero />
+  <About />
+
+  <section class="flex flex-col px-24 py-20 gap-8 bg-surface-primary" id="experience">
+    <span class="font-mono text-xs text-accent-primary">~ $ cat experience.md</span>
+    <h2 class="font-heading text-3xl text-foreground-primary">Experiência</h2>
+    <div class="flex flex-col gap-6 w-full">
+      {experience.map((exp) => (
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <h3 class="font-heading text-xl text-foreground-primary">{exp.role}</h3>
+            <span class="font-mono text-xs text-foreground-secondary">{exp.period}</span>
+          </div>
+          <span class="font-body text-sm text-accent-primary">{exp.company}</span>
+          <p class="font-body text-sm text-foreground-secondary">{exp.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <Writing />
+  <Now />
+</Base>

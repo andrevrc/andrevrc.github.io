@@ -1,0 +1,27 @@
+---
+
+import profile from "../data/profile.json";
+
+const socialLinks = [
+  { label: "github", href: `https://${profile.social.github}` },
+  { label: "twitter", href: `https://${profile.social.twitter}` },
+  { label: "email", href: `mailto:${profile.email}` },
+  { label: "rss", href: profile.social.rss },
+];
+---
+
+<footer class="flex items-center justify-between px-24 py-8 w-full bg-surface-card">
+  <span class="font-body text-sm text-foreground-secondary">
+    &copy; {new Date().getFullYear()} {profile.name}
+  </span>
+  <div class="flex items-center gap-5">
+    {socialLinks.map((link) => (
+      <a
+        href={link.href}
+        class="font-body text-sm text-foreground-secondary no-underline hover:text-accent-primary transition-colors"
+      >
+        {link.label}
+      </a>
+    ))}
+  </div>
+</footer>

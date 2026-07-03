@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const slug = post.id.replace(/\.md$/, "");
+const { title, description, category, date, readTime } = post.data;
+---
+
+<a
+  href={`/writing/${slug}`}
+  class="flex flex-col gap-3 p-6 rounded-lg bg-surface-card text-left no-underline hover:ring-1 ring-accent-primary/30 transition-all"
+>
+  <span class="font-mono text-xs text-accent-primary">{category}</span>
+  <h3 class="font-heading text-xl text-foreground-primary">{title}</h3>
+  <p class="font-body text-sm text-foreground-secondary">{description}</p>
+  <div class="flex gap-4">
+    <span class="font-mono text-xs text-foreground-secondary">
+      {date.toLocaleDateString("pt-BR", { month: "short", year: "numeric" })}
+    </span>
+    <span class="font-mono text-xs text-foreground-secondary">{readTime} read</span>
+  </div>
+</a>

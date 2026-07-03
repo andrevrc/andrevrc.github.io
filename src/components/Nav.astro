@@ -1,0 +1,54 @@
+---
+import profile from "../data/profile.json";
+const links = [
+  { href: "/#about", label: "about" },
+  { href: "/writing", label: "writing" },
+  { href: "/#now", label: "now" },
+  { href: "/contact", label: "contact" },
+];
+---
+
+<nav class="flex items-center justify-between px-12 py-5 w-full">
+  <a href="/" class="font-heading text-2xl no-underline text-foreground-primary">
+    /{profile.handle}
+  </a>
+
+  <div class="flex items-center gap-6">
+    {links.map((link) => (
+      <a
+        href={link.href}
+        class="font-body text-sm text-foreground-secondary no-underline hover:text-accent-primary transition-colors"
+      >
+        {link.label}
+      </a>
+    ))}
+    <span class="text-border-subtle font-body text-sm">|</span>
+    <a
+      href="https://github.com/andrevrc"
+      class="font-body text-sm text-foreground-secondary no-underline hover:text-accent-primary transition-colors"
+    >
+      github
+    </a>
+    <button
+      id="theme-toggle"
+      class="font-mono text-xs text-foreground-secondary hover:text-accent-warm transition-colors cursor-pointer bg-transparent border-none p-1"
+      aria-label="Toggle theme"
+      title="Toggle theme"
+    >
+      [ ]_
+    </button>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById("theme-toggle");
+  const html = document.documentElement;
+
+  const saved = localStorage.getItem("theme");
+  if (saved === "light") html.classList.remove("dark");
+
+  toggle?.addEventListener("click", () => {
+    html.classList.toggle("dark");
+    localStorage.setItem("theme", html.classList.contains("dark") ? "dark" : "light");
+  });
+</script>

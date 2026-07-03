@@ -1,0 +1,58 @@
+---
+import Base from "../../layouts/Base.astro";
+import AuthorBio from "../../components/AuthorBio.astro";
+import PostCard from "../../components/PostCard.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id.replace(/\.md$/, "") },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const slug = post.id.replace(/\.md$/, "");
+const { Content } = await render(post);
+const allPosts = await getCollection("blog");
+const related = allPosts
+  .filter((p) => p.id !== post.id && p.data.category === post.data.category)
+  .slice(0, 3);
+const { title, description, category, date, readTime } = post.data;
+---
+
+<Base title={`${title} — André Carvalho`} description={description}>
+  <article class="flex flex-col items-center px-24 py-20 gap-6">
+    <span class="font-mono text-xs text-accent-secondary">~/{category}/{slug}</span>
+    <h1 class="font-heading text-4xl text-foreground-primary text-center max-w-[700px]">
+      {title}
+    </h1>
+    <div class="flex gap-4 justify-center">
+      <span class="font-mono text-sm text-foreground-secondary">
+        {date.toLocaleDateString("pt-BR", { month: "long", year: "numeric" })}
+      </span>
+      <span class="font-mono text-sm text-foreground-secondary">·</span>
+      <span class="font-mono text-sm text-foreground-secondary">{readTime} read</span>
+    </div>
+  </article>
+
+  <div class="flex flex-col items-center px-24 pb-24 gap-6">
+    <div class="w-[720px] h-[380px] rounded-lg bg-surface-primary" />
+
+    <div class="w-[720px] flex flex-col gap-6 prose">
+      <Content />
+    </div>
+  </div>
+
+  <AuthorBio />
+
+  {related.length > 0 && (
+    <section class="flex flex-col px-24 py-16 gap-6">
+      <h2 class="font-heading text-2xl text-foreground-primary">Leia também</h2>
+      <div class="flex flex-col gap-4 w-full">
+        {related.map((p) => <PostCard post={p} />)}
+      </div>
+    </section>
+  )}
+</Base>

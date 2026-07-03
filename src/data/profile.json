@@ -1,0 +1,18 @@
+{
+  "name": "André Carvalho",
+  "handle": "andrevrc",
+  "tagline": "Full-stack engineer exploring AI, security, and ideas.",
+  "bio": [
+    "Full-stack developer com experiência em engenharia de software, IA e segurança da informação. Curioso por natureza, passo tanto tempo aprendendo quanto construindo.",
+    "Acredito que código é meio de comunicação, não fim. Meu foco está em construir sistemas seguros, elegantes e que resolvam problemas reais."
+  ],
+  "tags": ["full-stack", "ai/ml", "security", "curiosity"],
+  "location": "Recife, Brasil",
+  "email": "oi@andrecarvalho.dev",
+  "social": {
+    "github": "github.com/andrevrc",
+    "twitter": "x.com/andrevrc",
+    "rss": "/rss.xml"
+  },
+  "currently": "studying AI alignment & secure systems"
+}

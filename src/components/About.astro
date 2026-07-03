@@ -1,0 +1,32 @@
+---
+import profile from "../data/profile.json";
+---
+
+<section class="flex flex-col px-24 py-20 gap-8" id="about">
+  <span class="font-mono text-xs text-accent-primary">
+    ~ $ cat about.md
+  </span>
+
+  <h2 class="font-heading text-3xl text-foreground-primary">
+    Sobre
+  </h2>
+
+  <div class="flex items-center gap-16">
+    <div class="size-72 rounded-lg bg-surface-primary shrink-0" />
+
+    <div class="flex flex-col gap-4 flex-1">
+      {profile.bio.map((p) => (
+        <p class="font-body text-base text-foreground-secondary leading-relaxed">
+          {p}
+        </p>
+      ))}
+      <div class="flex gap-2 mt-2">
+        {profile.tags.map((tag) => (
+          <span class="font-mono text-xs text-accent-primary">
+            {tag}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

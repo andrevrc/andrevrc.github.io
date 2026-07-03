@@ -1,0 +1,20 @@
+[
+  {
+    "role": "Senior Full-stack Engineer",
+    "company": "Empresa X",
+    "period": "2024 — presente",
+    "description": "Arquitetando soluções full-stack com foco em segurança e integração de IA. Liderando migração de sistemas legados para arquitetura moderna."
+  },
+  {
+    "role": "Software Engineer",
+    "company": "Empresa Y",
+    "period": "2021 — 2024",
+    "description": "Desenvolvimento de APIs REST e GraphQL, sistemas de recomendação baseados em ML, e automação de infraestrutura com IaC."
+  },
+  {
+    "role": "Junior Developer",
+    "company": "Empresa Z",
+    "period": "2019 — 2021",
+    "description": "Início na área com desenvolvimento web full-stack. Contribuições em projetos open-source e melhorias de performance."
+  }
+]
