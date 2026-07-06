@@ -1,6 +1,7 @@
 ---
 const posts = [
   {
+    slug: "aprendi-5-anos-dev",
     category: "carreira",
     title: "O que aprendi depois de 5 anos como dev",
     description: "Reflexões sobre código, carreira e comunidade depois de meia década na área.",
@@ -8,6 +9,7 @@ const posts = [
     readTime: "8 min",
   },
   {
+    slug: "sistemas-seguros-ia",
     category: "security",
     title: "Construindo sistemas seguros com IA",
     description: "Como integrar modelos de linguagem sem abrir brechas de segurança.",
@@ -15,6 +17,7 @@ const posts = [
     readTime: "12 min",
   },
   {
+    slug: "estudando-alignment",
     category: "ai",
     title: "Por que estou estudando alignment",
     description: "Notas de estudo sobre segurança de IA e alinhamento de valores.",
@@ -35,7 +38,7 @@ const posts = [
 
   <div class="flex flex-col gap-3 w-full">
     {posts.map((post) => (
-      <a href="/writing" class="flex flex-col gap-3 p-6 rounded-lg bg-surface-card text-left no-underline hover:ring-1 ring-accent-primary/30 transition-all">
+      <a href={`/writing/${post.slug}`} class="flex flex-col gap-3 p-6 rounded-lg bg-surface-card text-left no-underline hover:ring-1 ring-accent-primary/30 transition-all">
         <span class="font-mono text-xs text-accent-primary">
           {post.category}
         </span>
@@ -56,4 +59,8 @@ const posts = [
       </a>
     ))}
   </div>
+
+  <a href="/writing" class="font-mono text-xs text-accent-primary hover:text-accent-secondary transition-colors self-start no-underline">
+    ~ $ veja todos →
+  </a>
 </section>

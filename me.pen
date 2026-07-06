@@ -8,7 +8,7 @@
       "y": 0,
       "name": "Blog Page",
       "theme": {
-        "mode": "light"
+        "mode": "dark"
       },
       "clip": true,
       "width": 1440,
@@ -16,103 +16,32 @@
       "layout": "vertical",
       "children": [
         {
-          "type": "frame",
-          "id": "r368kf",
+          "id": "d31Lew",
+          "type": "ref",
+          "ref": "WRL5w",
           "name": "Nav",
           "width": "fill_container",
-          "gap": 32,
-          "padding": [
-            20,
-            48
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "p84vP",
-              "name": "Logo",
-              "fill": "$foreground-primary",
-              "content": "/andre",
-              "fontFamily": "$font-heading",
-              "fontSize": 24,
-              "fontWeight": "normal"
+          "descendants": {
+            "ATDyY": {
+              "content": "about"
             },
-            {
-              "type": "frame",
-              "id": "nhQsd",
-              "name": "Nav Links",
-              "width": "fill_container",
-              "gap": 24,
-              "justifyContent": "end",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "Run9d",
-                  "name": "Nav about",
-                  "fill": "$foreground-secondary",
-                  "content": "about",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "Lg87h",
-                  "name": "Nav writing",
-                  "fill": "$foreground-secondary",
-                  "content": "writing",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "rawC5",
-                  "name": "Nav now",
-                  "fill": "$foreground-secondary",
-                  "content": "now",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "iDzSi",
-                  "name": "Nav contact",
-                  "fill": "$foreground-secondary",
-                  "content": "contact",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "lNzob",
-                  "name": "Nav divider",
-                  "fill": "$border-subtle",
-                  "content": "|",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "r1Iwgf",
-                  "name": "Nav github",
-                  "fill": "$foreground-secondary",
-                  "content": "github",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
+            "gMClI": {
+              "content": "writing"
+            },
+            "BHu9P": {
+              "content": "now"
+            },
+            "z1J2T": {
+              "content": "contact"
+            },
+            "SngMb": {
+              "content": "github"
             }
-          ]
+          }
         },
         {
           "type": "frame",
-          "id": "Aoq5v",
+          "id": "GhsXX",
           "name": "Hero",
           "width": "fill_container",
           "layout": "vertical",
@@ -123,44 +52,75 @@
           "children": [
             {
               "type": "text",
-              "id": "G0lFU",
-              "name": "Hero Tagline",
+              "id": "psoFw",
+              "name": "Hero Prompt",
               "fill": "$accent-primary",
-              "content": "WRITING & BUILDING",
-              "fontFamily": "$font-body",
+              "content": "~ $ ./hello.sh",
+              "fontFamily": "$font-mono",
               "fontSize": 13,
-              "fontWeight": "normal",
-              "letterSpacing": 3
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "x6o2JY",
+              "id": "NqvUd",
               "name": "Hero Title",
               "fill": "$foreground-primary",
               "content": "André Carvalho",
-              "textAlign": "center",
               "fontFamily": "$font-heading",
               "fontSize": 64,
               "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "T9Vnv",
+              "id": "Gso1w",
               "name": "Hero Subtitle",
               "fill": "$foreground-secondary",
               "textGrowth": "fixed-width",
-              "width": 600,
-              "content": "Engenheiro de software explorando idéias, escrevendo sobre tecnologia, carreira e vida.",
+              "width": 560,
+              "content": "Full-stack engineer exploring AI, security, and ideas.",
               "textAlign": "center",
               "fontFamily": "$font-body",
               "fontSize": 18,
               "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "VoFmB",
+              "name": "Currently Row",
+              "fill": "$surface-primary",
+              "cornerRadius": 6,
+              "gap": 12,
+              "padding": [
+                12,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "ugyXq",
+                  "name": "Status Dot",
+                  "fill": "$accent-warm",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "Uh5c5",
+                  "name": "Currently Text",
+                  "fill": "$foreground-secondary",
+                  "content": "studying: AI alignment & secure systems",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         },
         {
           "type": "frame",
-          "id": "JUDJG",
+          "id": "vU289",
           "name": "About Section",
           "width": "fill_container",
           "layout": "vertical",
@@ -172,34 +132,44 @@
           "children": [
             {
               "type": "text",
-              "id": "Xrreh",
-              "name": "About Label",
+              "id": "Q88BQ",
+              "name": "About Eyebrow",
               "fill": "$accent-primary",
-              "content": "SOBRE",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal",
-              "letterSpacing": 3
+              "content": "~ $ cat about.md",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "WfUMv",
+              "name": "About Heading",
+              "fill": "$foreground-primary",
+              "content": "Sobre",
+              "fontFamily": "$font-heading",
+              "fontSize": 32,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
-              "id": "UJ3zH",
+              "id": "kAOmX",
               "name": "About Row",
               "width": "fill_container",
               "gap": 64,
+              "alignItems": "center",
               "children": [
                 {
                   "type": "rectangle",
-                  "cornerRadius": 4,
-                  "id": "uq10e",
+                  "cornerRadius": 8,
+                  "id": "boWrr",
                   "name": "Photo Placeholder",
-                  "fill": "$border-subtle",
+                  "fill": "$surface-primary",
                   "width": 280,
                   "height": 320
                 },
                 {
                   "type": "frame",
-                  "id": "dJLRh",
+                  "id": "dcTxp",
                   "name": "About Text",
                   "width": "fill_container",
                   "layout": "vertical",
@@ -207,49 +177,98 @@
                   "children": [
                     {
                       "type": "text",
-                      "id": "jceRr",
-                      "name": "About Heading",
-                      "fill": "$foreground-primary",
-                      "content": "Um pouco sobre mim",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 32,
+                      "id": "rHctc",
+                      "name": "About Para 1",
+                      "fill": "$foreground-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Full-stack developer com experiência em engenharia de software, IA e segurança da informação. Curioso por natureza, passo tanto tempo aprendendo quanto construindo.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
                       "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "yoGWk",
-                      "name": "About Body",
+                      "id": "U12t4W",
+                      "name": "About Para 2",
                       "fill": "$foreground-secondary",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Sou engenheiro de software com experiência em construir produtos digitais. Trabalho com desenvolvimento full-stack, arquitetura de sistemas e tudo que envolve transformar idéias em código. Nas horas vagas, gosto de escrever sobre o que aprendo, explorar novas tecnologias e compartilhar conhecimento.",
-                      "lineHeight": 1.6,
+                      "content": "Acredito que código é meio de comunicação, não fim. Meu foco está em construir sistemas seguros, elegantes e que resolvam problemas reais.",
+                      "lineHeight": 1.7,
                       "fontFamily": "$font-body",
-                      "fontSize": 16,
+                      "fontSize": 15,
                       "fontWeight": "normal"
                     },
                     {
-                      "type": "text",
-                      "id": "nKOOT",
-                      "name": "About Body 2",
-                      "fill": "$foreground-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Este site é meu cantinho na internet — um lugar para registrar pensamentos, projetos e descobertas. Seja bem-vindo!",
-                      "lineHeight": 1.6,
-                      "fontFamily": "$font-body",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                      "type": "frame",
+                      "id": "SOxrD",
+                      "name": "Tag Row",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l4ZTaw",
+                          "name": "Tag 1",
+                          "fill": "$accent-primary",
+                          "content": "full-stack",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uwHNY",
+                          "name": "Tag 2",
+                          "fill": "$accent-primary",
+                          "content": "ai/ml",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ipvEn",
+                          "name": "Tag 3",
+                          "fill": "$accent-primary",
+                          "content": "security",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XCNFD",
+                          "name": "Tag 4",
+                          "fill": "$accent-primary",
+                          "content": "curiosity",
+                          "fontFamily": "$font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "type": "rectangle",
+              "id": "ggWH0",
+              "layoutPosition": "absolute",
+              "x": 96,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-warm",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
           "type": "frame",
-          "id": "LT5fK",
+          "id": "A5cywv",
           "name": "Writing Section",
           "width": "fill_container",
           "fill": "$surface-primary",
@@ -262,269 +281,126 @@
           "children": [
             {
               "type": "text",
-              "id": "i5wgB",
-              "name": "Writing Label",
+              "id": "qFnZY",
+              "name": "Writing Eyebrow",
               "fill": "$accent-primary",
-              "content": "ESCRITA",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal",
-              "letterSpacing": 3
+              "content": "~ $ ls writing/",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "j8BA9i",
+              "id": "Fxg0W",
               "name": "Writing Heading",
               "fill": "$foreground-primary",
-              "content": "Últimos textos",
+              "content": "Escrita",
               "fontFamily": "$font-heading",
               "fontSize": 32,
               "fontWeight": "normal"
             },
             {
               "type": "frame",
-              "id": "bkq7o",
+              "id": "m9rI0",
               "name": "Posts Grid",
               "width": "fill_container",
               "layout": "vertical",
               "gap": 12,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "Gc1Ea",
+                  "id": "AYYfd",
+                  "type": "ref",
+                  "ref": "b5ndN1",
                   "name": "Post Card",
                   "width": "fill_container",
-                  "fill": "$surface-card",
-                  "cornerRadius": 4,
-                  "gap": 24,
-                  "padding": 24,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "LeNEB",
-                      "name": "Post Content",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 8,
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "zIGHF",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "gKNwg",
-                              "name": "Post Tag",
-                              "fill": "$accent-primary",
-                              "content": "CARREIRA",
-                              "fontFamily": "$font-body",
-                              "fontSize": 12,
-                              "fontWeight": "normal",
-                              "letterSpacing": 2
-                            },
-                            {
-                              "type": "text",
-                              "id": "MHKen",
-                              "name": "Post Date",
-                              "fill": "$border-subtle",
-                              "content": "Jun 2026",
-                              "fontFamily": "$font-body",
-                              "fontSize": 12,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "fT2Ll",
-                          "name": "Post Title",
-                          "fill": "$foreground-primary",
-                          "content": "O que aprendi depois de 5 anos como dev",
-                          "fontFamily": "$font-heading",
-                          "fontSize": 20,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "GYKyv",
-                          "name": "Post Desc",
-                          "fill": "$foreground-secondary",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Reflexões sobre crescimento profissional, escolhas técnicas e o que realmente importa na carreira de engenharia de software.",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-body",
-                          "fontSize": 15,
-                          "fontWeight": "normal"
-                        }
-                      ]
+                  "descendants": {
+                    "e0NOWA": {
+                      "content": "carreira"
+                    },
+                    "aHw1h": {
+                      "content": "O que aprendi depois de 5 anos como dev"
+                    },
+                    "zLKsu": {
+                      "content": "Reflexões sobre código, carreira e comunidade depois de meia década na área."
+                    },
+                    "I8GkSq": {
+                      "content": "Jun 2026"
+                    },
+                    "L7H7kY": {
+                      "content": "8 min"
                     }
-                  ]
+                  }
                 },
                 {
-                  "type": "frame",
-                  "id": "Z2gEwJ",
+                  "id": "vVwvc",
+                  "type": "ref",
+                  "ref": "b5ndN1",
                   "name": "Post Card",
                   "width": "fill_container",
-                  "fill": "$surface-card",
-                  "cornerRadius": 4,
-                  "gap": 24,
-                  "padding": 24,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "O2OpWh",
-                      "name": "Post Content",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 8,
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "kiizw",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "l1ROM",
-                              "name": "Post Tag",
-                              "fill": "$accent-primary",
-                              "content": "TECH",
-                              "fontFamily": "$font-body",
-                              "fontSize": 12,
-                              "fontWeight": "normal",
-                              "letterSpacing": 2
-                            },
-                            {
-                              "type": "text",
-                              "id": "eUXFy",
-                              "name": "Post Date",
-                              "fill": "$border-subtle",
-                              "content": "Mai 2026",
-                              "fontFamily": "$font-body",
-                              "fontSize": 12,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "DIgay",
-                          "name": "Post Title",
-                          "fill": "$foreground-primary",
-                          "content": "Construindo um design system do zero",
-                          "fontFamily": "$font-heading",
-                          "fontSize": 20,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "Ml9ca",
-                          "name": "Post Desc",
-                          "fill": "$foreground-secondary",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Como criar e manter um design system escalável para produtos digitais, desde a escolha das ferramentas até a adoção pelo time.",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-body",
-                          "fontSize": 15,
-                          "fontWeight": "normal"
-                        }
-                      ]
+                  "descendants": {
+                    "e0NOWA": {
+                      "content": "security"
+                    },
+                    "aHw1h": {
+                      "content": "Construindo sistemas seguros com IA"
+                    },
+                    "zLKsu": {
+                      "content": "Como integrar modelos de linguagem sem abrir brechas de segurança."
+                    },
+                    "I8GkSq": {
+                      "content": "Mai 2026"
+                    },
+                    "L7H7kY": {
+                      "content": "12 min"
                     }
-                  ]
+                  }
                 },
                 {
-                  "type": "frame",
-                  "id": "TkQan",
+                  "id": "mSjtm",
+                  "type": "ref",
+                  "ref": "b5ndN1",
                   "name": "Post Card",
                   "width": "fill_container",
-                  "fill": "$surface-card",
-                  "cornerRadius": 4,
-                  "gap": 24,
-                  "padding": 24,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "a18dI",
-                      "name": "Post Content",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 8,
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "k63eb",
-                          "name": "Post Meta",
-                          "gap": 12,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "WD1mD",
-                              "name": "Post Tag",
-                              "fill": "$accent-primary",
-                              "content": "REFLEXÃO",
-                              "fontFamily": "$font-body",
-                              "fontSize": 12,
-                              "fontWeight": "normal",
-                              "letterSpacing": 2
-                            },
-                            {
-                              "type": "text",
-                              "id": "wEKxx",
-                              "name": "Post Date",
-                              "fill": "$border-subtle",
-                              "content": "Abr 2026",
-                              "fontFamily": "$font-body",
-                              "fontSize": 12,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "text",
-                          "id": "bxzge",
-                          "name": "Post Title",
-                          "fill": "$foreground-primary",
-                          "content": "Por que escrever faz de você um dev melhor",
-                          "fontFamily": "$font-heading",
-                          "fontSize": 20,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "iZwIy",
-                          "name": "Post Desc",
-                          "fill": "$foreground-secondary",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Escrever regularmente melhora sua comunicação, clareza de pensamento e habilidades técnicas. Aqui está o porquê.",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-body",
-                          "fontSize": 15,
-                          "fontWeight": "normal"
-                        }
-                      ]
+                  "descendants": {
+                    "e0NOWA": {
+                      "content": "ai"
+                    },
+                    "aHw1h": {
+                      "content": "Por que estou estudando alignment"
+                    },
+                    "zLKsu": {
+                      "content": "Notas de estudo sobre segurança de IA e alinhamento de valores."
+                    },
+                    "I8GkSq": {
+                      "content": "Abr 2026"
+                    },
+                    "L7H7kY": {
+                      "content": "6 min"
                     }
-                  ]
+                  }
                 }
               ]
+            },
+            {
+              "type": "rectangle",
+              "id": "Oo9Ma",
+              "layoutPosition": "absolute",
+              "x": 96,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-primary",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
           "type": "frame",
-          "id": "hx6G5",
+          "id": "z2mbe",
           "name": "Now Section",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": 24,
+          "gap": 32,
           "padding": [
             80,
             96
@@ -532,77 +408,77 @@
           "children": [
             {
               "type": "text",
-              "id": "AmrOa",
-              "name": "Now Label",
+              "id": "bFQWY",
+              "name": "Now Eyebrow",
               "fill": "$accent-primary",
-              "content": "AGORA",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal",
-              "letterSpacing": 3
+              "content": "~ $ cat now.md",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "e8lcWB",
+              "id": "drg4H",
               "name": "Now Heading",
               "fill": "$foreground-primary",
-              "content": "O que estou fazendo agora",
+              "content": "Agora",
               "fontFamily": "$font-heading",
               "fontSize": 32,
               "fontWeight": "normal"
             },
             {
               "type": "frame",
-              "id": "FiJET",
+              "id": "wm4Lv",
               "name": "Now Items",
               "width": "fill_container",
               "layout": "vertical",
-              "gap": 16,
+              "gap": 20,
               "children": [
                 {
                   "type": "frame",
-                  "id": "y502XH",
+                  "id": "L89hb",
                   "name": "Now Item",
                   "width": "fill_container",
                   "gap": 16,
                   "children": [
                     {
                       "type": "text",
-                      "id": "HbJbI",
-                      "name": "Now Item Emoji",
-                      "fill": "#1A1A1A",
-                      "content": "💻",
+                      "id": "TqOLc",
+                      "name": "Now Emoji",
+                      "fill": "$accent-primary",
+                      "content": "📘",
                       "fontFamily": "$font-body",
-                      "fontSize": 20,
+                      "fontSize": 18,
                       "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
-                      "id": "hlIdl",
-                      "name": "Now Item Content",
+                      "id": "IL7Jo",
+                      "name": "Now Text",
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 4,
                       "children": [
                         {
                           "type": "text",
-                          "id": "U74xX",
+                          "id": "qmRmC",
                           "name": "Now Item Title",
                           "fill": "$foreground-primary",
-                          "content": "Trabalhando em",
-                          "fontFamily": "$font-body",
-                          "fontSize": 16,
-                          "fontWeight": "600"
+                          "content": "Estudando alignment de IA",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "text",
-                          "id": "YaYDK",
+                          "id": "yBWT4",
                           "name": "Now Item Desc",
                           "fill": "$foreground-secondary",
-                          "content": "Um projeto pessoal de ferramentas de produtividade para devs",
-                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Cursos, artigos e implementações práticas sobre segurança em sistemas inteligentes.",
                           "fontFamily": "$font-body",
-                          "fontSize": 15,
+                          "fontSize": 14,
                           "fontWeight": "normal"
                         }
                       ]
@@ -611,48 +487,49 @@
                 },
                 {
                   "type": "frame",
-                  "id": "K1NRvD",
+                  "id": "mikmk",
                   "name": "Now Item",
                   "width": "fill_container",
                   "gap": 16,
                   "children": [
                     {
                       "type": "text",
-                      "id": "Q5sSV5",
-                      "name": "Now Item Emoji",
-                      "fill": "#1A1A1A",
-                      "content": "📖",
+                      "id": "FokMM",
+                      "name": "Now Emoji",
+                      "fill": "$accent-primary",
+                      "content": "🔒",
                       "fontFamily": "$font-body",
-                      "fontSize": 20,
+                      "fontSize": 18,
                       "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
-                      "id": "nEya3",
-                      "name": "Now Item Content",
+                      "id": "iH02b",
+                      "name": "Now Text",
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 4,
                       "children": [
                         {
                           "type": "text",
-                          "id": "AQQQx",
+                          "id": "U08WJ",
                           "name": "Now Item Title",
                           "fill": "$foreground-primary",
-                          "content": "Lendo",
-                          "fontFamily": "$font-body",
-                          "fontSize": 16,
-                          "fontWeight": "600"
+                          "content": "CTF & Security Research",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "text",
-                          "id": "x7XYLD",
+                          "id": "sIQFu",
                           "name": "Now Item Desc",
                           "fill": "$foreground-secondary",
-                          "content": "Staff Engineer: Leadership Beyond the Management Track, de Will Larson",
-                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Resolvendo desafios de segurança e contribuindo com ferramentas open-source.",
                           "fontFamily": "$font-body",
-                          "fontSize": 15,
+                          "fontSize": 14,
                           "fontWeight": "normal"
                         }
                       ]
@@ -661,98 +538,100 @@
                 },
                 {
                   "type": "frame",
-                  "id": "HQbDa",
+                  "id": "mjTbO",
                   "name": "Now Item",
                   "width": "fill_container",
                   "gap": 16,
                   "children": [
                     {
                       "type": "text",
-                      "id": "U1j6jI",
-                      "name": "Now Item Emoji",
-                      "fill": "#1A1A1A",
+                      "id": "QfMM1",
+                      "name": "Now Emoji",
+                      "fill": "$accent-primary",
+                      "content": "⚡",
+                      "fontFamily": "$font-body",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eATZJ",
+                      "name": "Now Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uonud",
+                          "name": "Now Item Title",
+                          "fill": "$foreground-primary",
+                          "content": "Full-stack AI tools",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Fq1rL",
+                          "name": "Now Item Desc",
+                          "fill": "$foreground-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Construindo aplicações que unem frontend, backend e modelos de linguagem.",
+                          "fontFamily": "$font-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oStFW",
+                  "name": "Now Item",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eVo9V",
+                      "name": "Now Emoji",
+                      "fill": "$accent-primary",
                       "content": "✍️",
                       "fontFamily": "$font-body",
-                      "fontSize": 20,
+                      "fontSize": 18,
                       "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
-                      "id": "BOQGP",
-                      "name": "Now Item Content",
+                      "id": "DWqqo",
+                      "name": "Now Text",
                       "width": "fill_container",
                       "layout": "vertical",
                       "gap": 4,
                       "children": [
                         {
                           "type": "text",
-                          "id": "YCqkX",
+                          "id": "uQjVC",
                           "name": "Now Item Title",
                           "fill": "$foreground-primary",
-                          "content": "Escrevendo",
-                          "fontFamily": "$font-body",
-                          "fontSize": 16,
-                          "fontWeight": "600"
-                        },
-                        {
-                          "type": "text",
-                          "id": "kx5gB",
-                          "name": "Now Item Desc",
-                          "fill": "$foreground-secondary",
-                          "content": "Uma série de posts sobre arquitetura de software e boas práticas",
-                          "lineHeight": 1.5,
-                          "fontFamily": "$font-body",
-                          "fontSize": 15,
+                          "content": "Escrevendo mais",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 18,
                           "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "f6tyjm",
-                  "name": "Now Item",
-                  "width": "fill_container",
-                  "gap": 16,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "As1v1",
-                      "name": "Now Item Emoji",
-                      "fill": "#1A1A1A",
-                      "content": "🎯",
-                      "fontFamily": "$font-body",
-                      "fontSize": 20,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "TEYRw",
-                      "name": "Now Item Content",
-                      "width": "fill_container",
-                      "layout": "vertical",
-                      "gap": 4,
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "o01B4",
-                          "name": "Now Item Title",
-                          "fill": "$foreground-primary",
-                          "content": "Aprendendo",
-                          "fontFamily": "$font-body",
-                          "fontSize": 16,
-                          "fontWeight": "600"
                         },
                         {
                           "type": "text",
-                          "id": "Z9hUi",
+                          "id": "WrVX5",
                           "name": "Now Item Desc",
                           "fill": "$foreground-secondary",
-                          "content": "Rust e sistemas distribuídos",
-                          "lineHeight": 1.5,
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Compromisso de publicar um artigo técnico por mês sobre tecnologia e carreira.",
                           "fontFamily": "$font-body",
-                          "fontSize": 15,
+                          "fontSize": 14,
                           "fontWeight": "normal"
                         }
                       ]
@@ -760,81 +639,26 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "rectangle",
+              "id": "JBYAl",
+              "layoutPosition": "absolute",
+              "x": 96,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-secondary",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
-          "type": "frame",
-          "id": "XZBs3",
+          "id": "EXDuf",
+          "type": "ref",
+          "ref": "lCobR",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$surface-inverse",
-          "padding": [
-            32,
-            96
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "lVbPF",
-              "name": "Footer Copyright",
-              "fill": "$foreground-inverse",
-              "content": "© 2026 André Vasconcelos",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "cLFQm",
-              "name": "Footer Links",
-              "gap": 20,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "JJsiJ",
-                  "name": "Footer github",
-                  "fill": "$foreground-inverse",
-                  "content": "github",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "C9kb4n",
-                  "name": "Footer twitter",
-                  "fill": "$foreground-inverse",
-                  "content": "twitter",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "r5b2mo",
-                  "name": "Footer email",
-                  "fill": "$foreground-inverse",
-                  "content": "email",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "Rt8tc",
-                  "name": "Footer rss",
-                  "fill": "$foreground-inverse",
-                  "content": "rss",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -845,7 +669,7 @@
       "y": 0,
       "name": "Writing Page",
       "theme": {
-        "mode": "light"
+        "mode": "dark"
       },
       "clip": true,
       "width": 1440,
@@ -853,103 +677,15 @@
       "layout": "vertical",
       "children": [
         {
-          "type": "frame",
-          "id": "mcj1R",
+          "id": "R6b5I",
+          "type": "ref",
+          "ref": "WRL5w",
           "name": "Nav",
-          "width": "fill_container",
-          "gap": 32,
-          "padding": [
-            20,
-            48
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "VBFBI",
-              "name": "Logo",
-              "fill": "$foreground-primary",
-              "content": "/andre",
-              "fontFamily": "$font-heading",
-              "fontSize": 24,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "C7zHi",
-              "name": "Nav Links",
-              "width": "fill_container",
-              "gap": 24,
-              "justifyContent": "end",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "yvhtC",
-                  "name": "Nav about",
-                  "fill": "$foreground-secondary",
-                  "content": "about",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "T5W0tg",
-                  "name": "Nav writing",
-                  "fill": "$foreground-secondary",
-                  "content": "writing",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "AIQ3G",
-                  "name": "Nav now",
-                  "fill": "$foreground-secondary",
-                  "content": "now",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "yJLhV",
-                  "name": "Nav contact",
-                  "fill": "$foreground-secondary",
-                  "content": "contact",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "J4W7yd",
-                  "name": "Nav divider",
-                  "fill": "$border-subtle",
-                  "content": "|",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "WWpLC",
-                  "name": "Nav github",
-                  "fill": "$foreground-secondary",
-                  "content": "github",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         },
         {
           "type": "frame",
-          "id": "OXfbc",
+          "id": "a0sWz2",
           "name": "Page Header",
           "width": "fill_container",
           "layout": "vertical",
@@ -961,18 +697,17 @@
           "children": [
             {
               "type": "text",
-              "id": "cWTLT",
-              "name": "Header Label",
-              "fill": "$accent-primary",
-              "content": "ESCRITA",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal",
-              "letterSpacing": 3
+              "id": "X0i0l",
+              "name": "Header Eyebrow",
+              "fill": "$accent-secondary",
+              "content": "~ $ ls writing/",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "UXAeP",
+              "id": "iSgPd",
               "name": "Header Title",
               "fill": "$foreground-primary",
               "content": "Textos e reflexões",
@@ -982,7 +717,7 @@
             },
             {
               "type": "text",
-              "id": "JeDZI",
+              "id": "EX1v3",
               "name": "Header Desc",
               "fill": "$foreground-secondary",
               "textGrowth": "fixed-width",
@@ -991,15 +726,26 @@
               "fontFamily": "$font-body",
               "fontSize": 16,
               "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "tifkn",
+              "layoutPosition": "absolute",
+              "x": 96,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-primary",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
           "type": "frame",
-          "id": "rYiBE",
+          "id": "QfG0y",
           "name": "Categories",
           "width": "fill_container",
-          "gap": 12,
+          "gap": 8,
           "padding": [
             0,
             96
@@ -1008,637 +754,220 @@
           "children": [
             {
               "type": "text",
-              "id": "may4l",
+              "id": "DXsiP",
               "name": "Cat todos",
               "fill": "$accent-primary",
-              "content": "TODOS",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "600",
-              "letterSpacing": 2
+              "content": "todos",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "ogvqa",
+              "id": "oBAq3",
               "name": "Cat tech",
               "fill": "$foreground-secondary",
-              "content": "TECH",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "letterSpacing": 2
+              "content": "tech",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "j5Tac",
+              "id": "DyJq1",
               "name": "Cat carreira",
               "fill": "$foreground-secondary",
-              "content": "CARREIRA",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "letterSpacing": 2
+              "content": "carreira",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "v1hVh",
+              "id": "Sd4Cc",
               "name": "Cat reflexão",
               "fill": "$foreground-secondary",
-              "content": "REFLEXÃO",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "letterSpacing": 2
+              "content": "reflexão",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "o2U7z",
+              "id": "cFlCl",
               "name": "Cat projetos",
               "fill": "$foreground-secondary",
-              "content": "PROJETOS",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "letterSpacing": 2
+              "content": "projetos",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             }
           ]
         },
         {
           "type": "frame",
-          "id": "udUea",
+          "id": "jX0ug",
           "name": "Content",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": 20,
+          "gap": 16,
           "padding": [
             48,
             96
           ],
           "children": [
             {
-              "type": "frame",
-              "id": "K835on",
+              "id": "RoW85",
+              "type": "ref",
+              "ref": "b5ndN1",
               "name": "Post Card",
               "width": "fill_container",
-              "fill": "$surface-card",
-              "cornerRadius": 4,
-              "gap": 24,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "D0lxb",
-                  "name": "Post Content",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "JC2NB",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "sG41W",
-                          "name": "Post Tag",
-                          "fill": "$accent-primary",
-                          "content": "CARREIRA",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "U0JWRi",
-                          "name": "Post Date",
-                          "fill": "$border-subtle",
-                          "content": "Jun 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "M2FyNP",
-                      "name": "Post Title",
-                      "fill": "$foreground-primary",
-                      "content": "O que aprendi depois de 5 anos como dev",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "eyX5r",
-                      "name": "Post Desc",
-                      "fill": "$foreground-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Reflexões sobre crescimento profissional, escolhas técnicas e o que realmente importa na carreira.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
+              "descendants": {
+                "e0NOWA": {
+                  "content": "carreira"
+                },
+                "aHw1h": {
+                  "content": "O que aprendi depois de 5 anos como dev"
+                },
+                "zLKsu": {
+                  "content": "Reflexões sobre código, carreira e comunidade."
+                },
+                "I8GkSq": {
+                  "content": "Jun 2026"
+                },
+                "L7H7kY": {
+                  "content": "8 min"
                 }
-              ]
+              }
             },
             {
-              "type": "frame",
-              "id": "VnxUW",
+              "id": "fzCyU",
+              "type": "ref",
+              "ref": "b5ndN1",
               "name": "Post Card",
               "width": "fill_container",
-              "fill": "$surface-card",
-              "cornerRadius": 4,
-              "gap": 24,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "Jd7YL",
-                  "name": "Post Content",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "XQTV5",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "oUSsg",
-                          "name": "Post Tag",
-                          "fill": "$accent-primary",
-                          "content": "TECH",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "IkTl1",
-                          "name": "Post Date",
-                          "fill": "$border-subtle",
-                          "content": "Mai 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "fSClW",
-                      "name": "Post Title",
-                      "fill": "$foreground-primary",
-                      "content": "Construindo um design system do zero",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "Va9Ql",
-                      "name": "Post Desc",
-                      "fill": "$foreground-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Como criar e manter um design system escalável para produtos digitais.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
+              "descendants": {
+                "e0NOWA": {
+                  "content": "security"
+                },
+                "aHw1h": {
+                  "content": "Construindo sistemas seguros com IA"
+                },
+                "zLKsu": {
+                  "content": "Como integrar LLMs sem abrir brechas de segurança."
+                },
+                "I8GkSq": {
+                  "content": "Mai 2026"
+                },
+                "L7H7kY": {
+                  "content": "12 min"
                 }
-              ]
+              }
             },
             {
-              "type": "frame",
-              "id": "MNC59",
+              "id": "fktjS",
+              "type": "ref",
+              "ref": "b5ndN1",
               "name": "Post Card",
               "width": "fill_container",
-              "fill": "$surface-card",
-              "cornerRadius": 4,
-              "gap": 24,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "Xxsfk",
-                  "name": "Post Content",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "MmWFJ",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "fGzHC",
-                          "name": "Post Tag",
-                          "fill": "$accent-primary",
-                          "content": "REFLEXÃO",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "ryHC4",
-                          "name": "Post Date",
-                          "fill": "$border-subtle",
-                          "content": "Abr 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "qSXfu",
-                      "name": "Post Title",
-                      "fill": "$foreground-primary",
-                      "content": "Por que escrever faz de você um dev melhor",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "tdh2f",
-                      "name": "Post Desc",
-                      "fill": "$foreground-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Escrever regularmente melhora sua comunicação e clareza de pensamento.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
+              "descendants": {
+                "e0NOWA": {
+                  "content": "ai"
+                },
+                "aHw1h": {
+                  "content": "Por que estou estudando alignment"
+                },
+                "zLKsu": {
+                  "content": "Notas sobre segurança de IA e alinhamento."
+                },
+                "I8GkSq": {
+                  "content": "Abr 2026"
+                },
+                "L7H7kY": {
+                  "content": "6 min"
                 }
-              ]
+              }
             },
             {
-              "type": "frame",
-              "id": "d1YoU",
+              "id": "sTeXq",
+              "type": "ref",
+              "ref": "b5ndN1",
               "name": "Post Card",
               "width": "fill_container",
-              "fill": "$surface-card",
-              "cornerRadius": 4,
-              "gap": 24,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "T7i6hU",
-                  "name": "Post Content",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "nJWOm",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "g7dAe6",
-                          "name": "Post Tag",
-                          "fill": "$accent-primary",
-                          "content": "TECH",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "r5YsNe",
-                          "name": "Post Date",
-                          "fill": "$border-subtle",
-                          "content": "Mar 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "Rb725",
-                      "name": "Post Title",
-                      "fill": "$foreground-primary",
-                      "content": "Arquitetura limpa em projetos reais",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "JyKXZ",
-                      "name": "Post Desc",
-                      "fill": "$foreground-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Aplicando conceitos de arquitetura limpa no dia a dia sem cair em dogmatismo.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
+              "descendants": {
+                "e0NOWA": {
+                  "content": "tech"
+                },
+                "aHw1h": {
+                  "content": "Automação de infraestrutura com IaC"
+                },
+                "zLKsu": {
+                  "content": "Terraform, Pulumi e o que aprendi na prática."
+                },
+                "I8GkSq": {
+                  "content": "Mar 2026"
+                },
+                "L7H7kY": {
+                  "content": "10 min"
                 }
-              ]
+              }
             },
             {
-              "type": "frame",
-              "id": "m3xIu",
+              "id": "kSJfH",
+              "type": "ref",
+              "ref": "b5ndN1",
               "name": "Post Card",
               "width": "fill_container",
-              "fill": "$surface-card",
-              "cornerRadius": 4,
-              "gap": 24,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "fcklv",
-                  "name": "Post Content",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "qEqhB",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "kRkME",
-                          "name": "Post Tag",
-                          "fill": "$accent-primary",
-                          "content": "PROJETOS",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "NhXur",
-                          "name": "Post Date",
-                          "fill": "$border-subtle",
-                          "content": "Fev 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "D6m1F",
-                      "name": "Post Title",
-                      "fill": "$foreground-primary",
-                      "content": "Meu setup de produtividade em 2026",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "lYb9o",
-                      "name": "Post Desc",
-                      "fill": "$foreground-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Ferramentas, hábitos e rituais que uso para me manter produtivo como dev.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
+              "descendants": {
+                "e0NOWA": {
+                  "content": "carreira"
+                },
+                "aHw1h": {
+                  "content": "O valor do código limpo"
+                },
+                "zLKsu": {
+                  "content": "Mais sobre comunicação que sobre tecnologia."
+                },
+                "I8GkSq": {
+                  "content": "Fev 2026"
+                },
+                "L7H7kY": {
+                  "content": "7 min"
                 }
-              ]
+              }
             },
             {
-              "type": "frame",
-              "id": "SUt4e",
+              "id": "n08RXF",
+              "type": "ref",
+              "ref": "b5ndN1",
               "name": "Post Card",
               "width": "fill_container",
-              "fill": "$surface-card",
-              "cornerRadius": 4,
-              "gap": 24,
-              "padding": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "pNh20",
-                  "name": "Post Content",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "Ae2n8",
-                      "name": "Post Meta",
-                      "gap": 12,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "R98gt",
-                          "name": "Post Tag",
-                          "fill": "$accent-primary",
-                          "content": "REFLEXÃO",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "n1p7w",
-                          "name": "Post Date",
-                          "fill": "$border-subtle",
-                          "content": "Jan 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "text",
-                      "id": "RlqUQ",
-                      "name": "Post Title",
-                      "fill": "$foreground-primary",
-                      "content": "O poder das restrições na criatividade",
-                      "fontFamily": "$font-heading",
-                      "fontSize": 20,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "QAkz1",
-                      "name": "Post Desc",
-                      "fill": "$foreground-secondary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Como limites podem impulsionar soluções criativas em vez de atrapalhar.",
-                      "lineHeight": 1.5,
-                      "fontFamily": "$font-body",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
-                    }
-                  ]
+              "descendants": {
+                "e0NOWA": {
+                  "content": "security"
+                },
+                "aHw1h": {
+                  "content": "Introdução a criptografia aplicada"
+                },
+                "zLKsu": {
+                  "content": "O que todo dev deveria saber sobre crypto."
+                },
+                "I8GkSq": {
+                  "content": "Jan 2026"
+                },
+                "L7H7kY": {
+                  "content": "15 min"
                 }
-              ]
+              }
             }
           ]
         },
         {
-          "type": "frame",
-          "id": "wRuYx",
-          "name": "Pagination",
-          "width": "fill_container",
-          "gap": 8,
-          "padding": [
-            48,
-            96
-          ],
-          "justifyContent": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "GIgrA",
-              "name": "Page 1",
-              "fill": "$accent-primary",
-              "content": "1",
-              "fontFamily": "$font-body",
-              "fontSize": 14,
-              "fontWeight": "600"
-            },
-            {
-              "type": "text",
-              "id": "MsQfD",
-              "name": "Page 2",
-              "fill": "$foreground-secondary",
-              "content": "2",
-              "fontFamily": "$font-body",
-              "fontSize": 14,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "pl88R",
-              "name": "Page 3",
-              "fill": "$foreground-secondary",
-              "content": "3",
-              "fontFamily": "$font-body",
-              "fontSize": 14,
-              "fontWeight": "normal"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "QD4Sv",
+          "id": "v9UjeZ",
+          "type": "ref",
+          "ref": "lCobR",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$surface-inverse",
-          "padding": [
-            32,
-            96
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "eV9uV",
-              "name": "Footer Copyright",
-              "fill": "$foreground-inverse",
-              "content": "© 2026 André Carvalho",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "mcVk4",
-              "name": "Footer Links",
-              "gap": 20,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "M1bB84",
-                  "name": "Footer github",
-                  "fill": "$foreground-inverse",
-                  "content": "github",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "yqQ83",
-                  "name": "Footer twitter",
-                  "fill": "$foreground-inverse",
-                  "content": "twitter",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "H2AO5X",
-                  "name": "Footer email",
-                  "fill": "$foreground-inverse",
-                  "content": "email",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "VQfYd",
-                  "name": "Footer rss",
-                  "fill": "$foreground-inverse",
-                  "content": "rss",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -1649,7 +978,7 @@
       "y": 0,
       "name": "Post Page",
       "theme": {
-        "mode": "light"
+        "mode": "dark"
       },
       "clip": true,
       "width": 1440,
@@ -1657,107 +986,19 @@
       "layout": "vertical",
       "children": [
         {
-          "type": "frame",
-          "id": "PMCt0",
+          "id": "JhPUC",
+          "type": "ref",
+          "ref": "WRL5w",
           "name": "Nav",
-          "width": "fill_container",
-          "gap": 32,
-          "padding": [
-            20,
-            48
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "d1I7pQ",
-              "name": "Logo",
-              "fill": "$foreground-primary",
-              "content": "/andre",
-              "fontFamily": "$font-heading",
-              "fontSize": 24,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "WgzjP",
-              "name": "Nav Links",
-              "width": "fill_container",
-              "gap": 24,
-              "justifyContent": "end",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "k9l81U",
-                  "name": "Nav about",
-                  "fill": "$foreground-secondary",
-                  "content": "about",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "TvfSG",
-                  "name": "Nav writing",
-                  "fill": "$foreground-secondary",
-                  "content": "writing",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "jNCGp",
-                  "name": "Nav now",
-                  "fill": "$foreground-secondary",
-                  "content": "now",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "s3hME",
-                  "name": "Nav contact",
-                  "fill": "$foreground-secondary",
-                  "content": "contact",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "oKhhY",
-                  "name": "Nav divider",
-                  "fill": "$border-subtle",
-                  "content": "|",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "bkDKD",
-                  "name": "Nav github",
-                  "fill": "$foreground-secondary",
-                  "content": "github",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         },
         {
           "type": "frame",
-          "id": "KayM2",
+          "id": "aKbz2",
           "name": "Article Header",
           "width": "fill_container",
           "layout": "vertical",
-          "gap": 16,
+          "gap": 24,
           "padding": [
             80,
             96
@@ -1766,17 +1007,17 @@
           "children": [
             {
               "type": "text",
-              "id": "ICuLl",
+              "id": "T4Fcty",
               "name": "Breadcrumb",
-              "fill": "$border-subtle",
-              "content": "escrita / carreira",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
+              "fill": "$accent-secondary",
+              "content": "~/writing/carreira",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
               "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "GUnxo",
+              "id": "zeryw",
               "name": "Article Title",
               "fill": "$foreground-primary",
               "textGrowth": "fixed-width",
@@ -1789,49 +1030,59 @@
             },
             {
               "type": "frame",
-              "id": "Vw7Nm",
+              "id": "YaT3G",
               "name": "Article Meta",
               "gap": 16,
               "justifyContent": "center",
-              "alignItems": "center",
               "children": [
                 {
                   "type": "text",
-                  "id": "pY8mF",
+                  "id": "qhc6G",
                   "name": "Article Date",
                   "fill": "$foreground-secondary",
-                  "content": "Junho 2026",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "content": "Jun 2026",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
                   "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "cfldK",
-                  "name": "Meta divider",
+                  "id": "cnS6g",
+                  "name": "Meta Divider",
                   "fill": "$border-subtle",
                   "content": "·",
                   "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "fontSize": 13,
                   "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "grvfs",
+                  "id": "LFXK2",
                   "name": "Article Read Time",
                   "fill": "$foreground-secondary",
-                  "content": "8 min de leitura",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
+                  "content": "8 min read",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 13,
                   "fontWeight": "normal"
                 }
               ]
+            },
+            {
+              "type": "rectangle",
+              "id": "Ad6Rc",
+              "layoutPosition": "absolute",
+              "x": 655,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-warm",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
           "type": "frame",
-          "id": "D6SQc",
+          "id": "docPC",
           "name": "Article Body",
           "width": "fill_container",
           "layout": "vertical",
@@ -1844,96 +1095,119 @@
           "children": [
             {
               "type": "rectangle",
-              "cornerRadius": 4,
-              "id": "Y1Akvq",
-              "name": "Image Placeholder",
+              "cornerRadius": 8,
+              "id": "sUMV7",
+              "name": "Article Image",
               "fill": "$surface-primary",
               "width": 720,
               "height": 380
             },
             {
               "type": "frame",
-              "id": "IC4pu",
+              "id": "EhWPu",
               "name": "Content Text",
-              "width": 700,
+              "width": 720,
               "layout": "vertical",
-              "gap": 20,
+              "gap": 24,
               "children": [
                 {
                   "type": "text",
-                  "id": "b2Hox",
+                  "id": "sWe7E",
                   "name": "Para 1",
-                  "fill": "$foreground-primary",
+                  "fill": "$foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "Depois de cinco anos trabalhando como engenheiro de software, resolvi parar um pouco para refletir sobre o que aprendi. Não são verdades universais, mas lições que fizeram diferença na minha trajetória.",
-                  "lineHeight": 1.7,
+                  "lineHeight": 1.8,
                   "fontFamily": "$font-body",
                   "fontSize": 16,
                   "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "O2izht",
+                  "id": "p90PJ",
                   "name": "Para 2",
-                  "fill": "$foreground-primary",
+                  "fill": "$foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "A primeira coisa que aprendi é que código é meio de comunicação, não fim. O melhor código que você pode escrever é aquele que seu eu do futuro vai conseguir entender. Isso significa nomes claros, estrutura consistente e, sim, comentários quando necessário.",
-                  "lineHeight": 1.7,
+                  "lineHeight": 1.8,
                   "fontFamily": "$font-body",
                   "fontSize": 16,
                   "fontWeight": "normal"
                 },
                 {
-                  "type": "text",
-                  "id": "s5QFC",
-                  "name": "Pull Quote",
-                  "fill": "$accent-primary",
-                  "textGrowth": "fixed-width",
+                  "type": "frame",
+                  "id": "mqiSL",
+                  "name": "Pull Quote Frame",
                   "width": "fill_container",
-                  "content": "\"Código é meio de comunicação, não fim.\"",
-                  "lineHeight": 1.4,
-                  "fontFamily": "$font-heading",
-                  "fontSize": 24,
-                  "fontWeight": "normal",
-                  "fontStyle": "italic"
+                  "gap": 24,
+                  "padding": [
+                    16,
+                    0,
+                    16,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "bdnr4",
+                      "name": "Quote Line",
+                      "fill": "$accent-primary",
+                      "width": 4,
+                      "height": 80
+                    },
+                    {
+                      "type": "text",
+                      "id": "XZeCb",
+                      "name": "Pull Quote",
+                      "fill": "$accent-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "\"Código é meio de comunicação, não fim.\"",
+                      "lineHeight": 1.4,
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
                 },
                 {
                   "type": "text",
-                  "id": "k0dZ1",
+                  "id": "x9KnET",
                   "name": "Para 3",
-                  "fill": "$foreground-primary",
+                  "fill": "$foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "Outra lição importante foi aprender a dizer não. Não para tecnologias novas (ou velhas demais), não para prazos irreais, não para complexidade desnecessária. Saber dizer não com educação e argumentos é uma das habilidades mais valiosas que um dev pode desenvolver.",
-                  "lineHeight": 1.7,
+                  "lineHeight": 1.8,
                   "fontFamily": "$font-body",
                   "fontSize": 16,
                   "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "kS3c2",
+                  "id": "IGTUE",
                   "name": "Para 4",
-                  "fill": "$foreground-primary",
+                  "fill": "$foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "Por fim, aprendi que comunidade importa. Participar de eventos, escrever, compartilhar conhecimento — tudo isso volta multiplicado. Não existe crescimento isolado na engenharia de software.",
-                  "lineHeight": 1.7,
+                  "lineHeight": 1.8,
                   "fontFamily": "$font-body",
                   "fontSize": 16,
                   "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "Z13XWP",
+                  "id": "J2vQTR",
                   "name": "Para 5",
-                  "fill": "$foreground-primary",
+                  "fill": "$foreground-secondary",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
                   "content": "Se eu pudesse dar um conselho pro André de 5 anos atrás, seria: foque em aprender os fundamentos, construa coisas reais e não tenha medo de errar. O resto é consequência.",
-                  "lineHeight": 1.7,
+                  "lineHeight": 1.8,
                   "fontFamily": "$font-body",
                   "fontSize": 16,
                   "fontWeight": "normal"
@@ -1941,29 +1215,21 @@
               ]
             },
             {
-              "type": "frame",
-              "id": "w0Qr4L",
-              "name": "Content Divider",
-              "width": 700,
-              "justifyContent": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "VKeMP",
-                  "name": "Divider dots",
-                  "fill": "$border-subtle",
-                  "content": "· · ·",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
+              "type": "rectangle",
+              "id": "PtzyG",
+              "layoutPosition": "absolute",
+              "x": 360,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-warm",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
           "type": "frame",
-          "id": "e0YOcd",
+          "id": "cc2Iq",
           "name": "Author Bio",
           "width": "fill_container",
           "fill": "$surface-primary",
@@ -1973,28 +1239,27 @@
             96
           ],
           "justifyContent": "center",
-          "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "vQJll",
+              "id": "SoX9o",
               "name": "Author Inner",
-              "width": 700,
+              "width": 720,
               "gap": 20,
               "alignItems": "center",
               "children": [
                 {
                   "type": "rectangle",
                   "cornerRadius": 32,
-                  "id": "D1iOwD",
+                  "id": "IXleq",
                   "name": "Author Avatar",
-                  "fill": "$border-subtle",
+                  "fill": "$accent-primary",
                   "width": 64,
                   "height": 64
                 },
                 {
                   "type": "frame",
-                  "id": "zcsiU",
+                  "id": "E1FjGv",
                   "name": "Author Text",
                   "width": "fill_container",
                   "layout": "vertical",
@@ -2002,21 +1267,22 @@
                   "children": [
                     {
                       "type": "text",
-                      "id": "fAKpx",
+                      "id": "p91NX",
                       "name": "Author Name",
                       "fill": "$foreground-primary",
                       "content": "André Carvalho",
-                      "fontFamily": "$font-body",
-                      "fontSize": 16,
-                      "fontWeight": "600"
+                      "fontFamily": "$font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
-                      "id": "SVFrm",
-                      "name": "Author Desc",
+                      "id": "gBPra",
+                      "name": "Author Bio Text",
                       "fill": "$foreground-secondary",
-                      "content": "Engenheiro de software. Escrevo sobre tecnologia, carreira e o que mais eu estiver aprendendo.",
-                      "lineHeight": 1.5,
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Full-stack developer, entusiasta de IA e segurança. Escrevendo sobre o que aprendo.",
                       "fontFamily": "$font-body",
                       "fontSize": 14,
                       "fontWeight": "normal"
@@ -2024,12 +1290,23 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "rectangle",
+              "id": "GQg5k",
+              "layoutPosition": "absolute",
+              "x": 360,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-primary",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
           "type": "frame",
-          "id": "zvkY1",
+          "id": "TDvEg",
           "name": "Related Posts",
           "width": "fill_container",
           "layout": "vertical",
@@ -2041,7 +1318,7 @@
           "children": [
             {
               "type": "text",
-              "id": "V8APVQ",
+              "id": "t3B5hT",
               "name": "Related Title",
               "fill": "$foreground-primary",
               "content": "Leia também",
@@ -2051,255 +1328,105 @@
             },
             {
               "type": "frame",
-              "id": "aGENd",
+              "id": "JMRr6",
               "name": "Related Grid",
               "width": "fill_container",
+              "layout": "vertical",
               "gap": 16,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "TwfVi",
+                  "id": "jI9U8",
+                  "type": "ref",
+                  "ref": "b5ndN1",
                   "name": "Related Card",
                   "width": "fill_container",
-                  "fill": "$surface-card",
-                  "cornerRadius": 4,
-                  "layout": "vertical",
-                  "gap": 8,
-                  "padding": 20,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "t1QFe",
-                      "name": "Related Meta",
-                      "gap": 10,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "lxgRl",
-                          "name": "Related Tag",
-                          "fill": "$accent-primary",
-                          "content": "TECH",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "I4MyS",
-                          "name": "Related Date",
-                          "fill": "$border-subtle",
-                          "content": "Mai 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
+                  "descendants": {
+                    "e0NOWA": {
+                      "content": "security"
                     },
-                    {
-                      "type": "text",
-                      "id": "kEZSq",
-                      "name": "Related Title",
-                      "fill": "$foreground-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Construindo um design system do zero",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-heading",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                    "aHw1h": {
+                      "content": "Construindo sistemas seguros com IA"
+                    },
+                    "zLKsu": {
+                      "content": ""
+                    },
+                    "I8GkSq": {
+                      "content": "—"
+                    },
+                    "L7H7kY": {
+                      "content": "12 min"
                     }
-                  ]
+                  }
                 },
                 {
-                  "type": "frame",
-                  "id": "LKEeD",
+                  "id": "VuP0f",
+                  "type": "ref",
+                  "ref": "b5ndN1",
                   "name": "Related Card",
                   "width": "fill_container",
-                  "fill": "$surface-card",
-                  "cornerRadius": 4,
-                  "layout": "vertical",
-                  "gap": 8,
-                  "padding": 20,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "c8Owrb",
-                      "name": "Related Meta",
-                      "gap": 10,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "Eapwf",
-                          "name": "Related Tag",
-                          "fill": "$accent-primary",
-                          "content": "REFLEXÃO",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "tJiYB",
-                          "name": "Related Date",
-                          "fill": "$border-subtle",
-                          "content": "Abr 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
+                  "descendants": {
+                    "e0NOWA": {
+                      "content": "ai"
                     },
-                    {
-                      "type": "text",
-                      "id": "sJSUD",
-                      "name": "Related Title",
-                      "fill": "$foreground-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Por que escrever faz de você um dev melhor",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-heading",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                    "aHw1h": {
+                      "content": "Por que estou estudando alignment"
+                    },
+                    "zLKsu": {
+                      "content": ""
+                    },
+                    "I8GkSq": {
+                      "content": "—"
+                    },
+                    "L7H7kY": {
+                      "content": "6 min"
                     }
-                  ]
+                  }
                 },
                 {
-                  "type": "frame",
-                  "id": "zoKX0",
+                  "id": "UjShT",
+                  "type": "ref",
+                  "ref": "b5ndN1",
                   "name": "Related Card",
                   "width": "fill_container",
-                  "fill": "$surface-card",
-                  "cornerRadius": 4,
-                  "layout": "vertical",
-                  "gap": 8,
-                  "padding": 20,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "klvyd",
-                      "name": "Related Meta",
-                      "gap": 10,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "P3Ggyj",
-                          "name": "Related Tag",
-                          "fill": "$accent-primary",
-                          "content": "TECH",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal",
-                          "letterSpacing": 2
-                        },
-                        {
-                          "type": "text",
-                          "id": "L6eAby",
-                          "name": "Related Date",
-                          "fill": "$border-subtle",
-                          "content": "Mar 2026",
-                          "fontFamily": "$font-body",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        }
-                      ]
+                  "descendants": {
+                    "e0NOWA": {
+                      "content": "tech"
                     },
-                    {
-                      "type": "text",
-                      "id": "sNSpU",
-                      "name": "Related Title",
-                      "fill": "$foreground-primary",
-                      "textGrowth": "fixed-width",
-                      "width": "fill_container",
-                      "content": "Arquitetura limpa em projetos reais",
-                      "lineHeight": 1.4,
-                      "fontFamily": "$font-heading",
-                      "fontSize": 16,
-                      "fontWeight": "normal"
+                    "aHw1h": {
+                      "content": "Automação de infraestrutura com IaC"
+                    },
+                    "zLKsu": {
+                      "content": ""
+                    },
+                    "I8GkSq": {
+                      "content": "—"
+                    },
+                    "L7H7kY": {
+                      "content": "10 min"
                     }
-                  ]
+                  }
                 }
               ]
+            },
+            {
+              "type": "rectangle",
+              "id": "bq39L",
+              "layoutPosition": "absolute",
+              "x": 96,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-secondary",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
-          "type": "frame",
-          "id": "qiC5W",
+          "id": "aZpSM",
+          "type": "ref",
+          "ref": "lCobR",
           "name": "Footer",
-          "width": "fill_container",
-          "fill": "$surface-inverse",
-          "padding": [
-            32,
-            96
-          ],
-          "justifyContent": "space_between",
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "R6Bw61",
-              "name": "Footer Copyright",
-              "fill": "$foreground-inverse",
-              "content": "© 2026 André Carvalho",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "Zt7V3",
-              "name": "Footer Links",
-              "gap": 20,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "OPwit",
-                  "name": "Footer github",
-                  "fill": "$foreground-inverse",
-                  "content": "github",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "GoUQN",
-                  "name": "Footer twitter",
-                  "fill": "$foreground-inverse",
-                  "content": "twitter",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "bYONY",
-                  "name": "Footer email",
-                  "fill": "$foreground-inverse",
-                  "content": "email",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "w2mKW",
-                  "name": "Footer rss",
-                  "fill": "$foreground-inverse",
-                  "content": "rss",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         }
       ]
     },
@@ -2310,7 +1437,7 @@
       "y": 0,
       "name": "Contact Page",
       "theme": {
-        "mode": "light"
+        "mode": "dark"
       },
       "clip": true,
       "width": 1440,
@@ -2318,103 +1445,15 @@
       "layout": "vertical",
       "children": [
         {
-          "type": "frame",
-          "id": "b3C4P",
+          "id": "vW5Im",
+          "type": "ref",
+          "ref": "WRL5w",
           "name": "Nav",
-          "width": "fill_container",
-          "gap": 32,
-          "padding": [
-            20,
-            48
-          ],
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "text",
-              "id": "xW3v8",
-              "name": "Logo",
-              "fill": "$foreground-primary",
-              "content": "/andre",
-              "fontFamily": "$font-heading",
-              "fontSize": 24,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "lvpGG",
-              "name": "Nav Links",
-              "width": "fill_container",
-              "gap": 24,
-              "justifyContent": "end",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "vV4wK",
-                  "name": "Nav about",
-                  "fill": "$foreground-secondary",
-                  "content": "about",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "Y1x86",
-                  "name": "Nav writing",
-                  "fill": "$foreground-secondary",
-                  "content": "writing",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "efqdE",
-                  "name": "Nav now",
-                  "fill": "$foreground-secondary",
-                  "content": "now",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "xNtFl",
-                  "name": "Nav contact",
-                  "fill": "$foreground-secondary",
-                  "content": "contact",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "D89z8",
-                  "name": "Nav divider",
-                  "fill": "$border-subtle",
-                  "content": "|",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "ndT5v",
-                  "name": "Nav github",
-                  "fill": "$foreground-secondary",
-                  "content": "github",
-                  "fontFamily": "$font-body",
-                  "fontSize": 14,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
+          "width": "fill_container"
         },
         {
           "type": "frame",
-          "id": "MlJwP",
+          "id": "LmXbS",
           "name": "Page Header",
           "width": "fill_container",
           "layout": "vertical",
@@ -2426,18 +1465,17 @@
           "children": [
             {
               "type": "text",
-              "id": "E2Ony",
-              "name": "Header Label",
-              "fill": "$accent-primary",
-              "content": "CONTATO",
-              "fontFamily": "$font-body",
-              "fontSize": 13,
-              "fontWeight": "normal",
-              "letterSpacing": 3
+              "id": "cXHLw",
+              "name": "Header Eyebrow",
+              "fill": "$accent-secondary",
+              "content": "~ $ mail --to andre",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
-              "id": "QdB0o",
+              "id": "CIBdP",
               "name": "Header Title",
               "fill": "$foreground-primary",
               "content": "Vamos conversar",
@@ -2447,7 +1485,7 @@
             },
             {
               "type": "text",
-              "id": "j6OBEL",
+              "id": "RpZUz",
               "name": "Header Desc",
               "fill": "$foreground-secondary",
               "textGrowth": "fixed-width",
@@ -2456,33 +1494,56 @@
               "fontFamily": "$font-body",
               "fontSize": 16,
               "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "gCdpF",
+              "layoutPosition": "absolute",
+              "x": 96,
+              "y": 0,
+              "name": "Section Accent Line",
+              "fill": "$accent-secondary",
+              "width": 40,
+              "height": 3
             }
           ]
         },
         {
           "type": "frame",
-          "id": "AHDAm",
+          "id": "TKM25",
           "name": "Main Content",
           "width": "fill_container",
           "gap": 48,
           "padding": [
             0,
+            96,
+            80,
             96
           ],
           "justifyContent": "center",
           "children": [
             {
               "type": "frame",
-              "id": "HTdDQ",
+              "id": "GxUGq",
               "name": "Form Column",
               "width": 480,
               "layout": "vertical",
               "gap": 16,
               "children": [
                 {
+                  "type": "text",
+                  "id": "DXjVD",
+                  "name": "Name Label",
+                  "fill": "$foreground-secondary",
+                  "content": "name",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
                   "type": "rectangle",
-                  "cornerRadius": 4,
-                  "id": "uuaaJ",
+                  "cornerRadius": 6,
+                  "id": "dCgh7",
                   "name": "Name Field",
                   "fill": "$surface-card",
                   "width": "fill_container",
@@ -2491,9 +1552,19 @@
                   "strokeWidth": 1
                 },
                 {
+                  "type": "text",
+                  "id": "m2CMid",
+                  "name": "Email Label",
+                  "fill": "$foreground-secondary",
+                  "content": "email",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
                   "type": "rectangle",
-                  "cornerRadius": 4,
-                  "id": "Wr6rY",
+                  "cornerRadius": 6,
+                  "id": "pYaz1",
                   "name": "Email Field",
                   "fill": "$surface-card",
                   "width": "fill_container",
@@ -2502,9 +1573,19 @@
                   "strokeWidth": 1
                 },
                 {
+                  "type": "text",
+                  "id": "shNZx",
+                  "name": "Subject Label",
+                  "fill": "$foreground-secondary",
+                  "content": "subject",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
                   "type": "rectangle",
-                  "cornerRadius": 4,
-                  "id": "lrlNN",
+                  "cornerRadius": 6,
+                  "id": "W46qs",
                   "name": "Subject Field",
                   "fill": "$surface-card",
                   "width": "fill_container",
@@ -2513,9 +1594,19 @@
                   "strokeWidth": 1
                 },
                 {
+                  "type": "text",
+                  "id": "C3Ua3",
+                  "name": "Message Label",
+                  "fill": "$foreground-secondary",
+                  "content": "message",
+                  "fontFamily": "$font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
                   "type": "rectangle",
-                  "cornerRadius": 4,
-                  "id": "yri6w",
+                  "cornerRadius": 6,
+                  "id": "UXLPU",
                   "name": "Message Field",
                   "fill": "$surface-card",
                   "width": "fill_container",
@@ -2525,33 +1616,21 @@
                 },
                 {
                   "type": "frame",
-                  "id": "CmcJA",
+                  "id": "LlQcR",
                   "name": "Button Row",
                   "width": "fill_container",
                   "justifyContent": "end",
                   "children": [
                     {
-                      "type": "frame",
-                      "id": "JBkjf",
+                      "id": "joJwx",
+                      "type": "ref",
+                      "ref": "T7fXzN",
                       "name": "Submit Button",
-                      "fill": "$accent-primary",
-                      "cornerRadius": 4,
-                      "padding": [
-                        12,
-                        24
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "Ms79N",
-                          "name": "Submit Label",
-                          "fill": "#FFFFFF",
-                          "content": "Enviar mensagem",
-                          "fontFamily": "$font-body",
-                          "fontSize": 14,
-                          "fontWeight": "600"
+                      "descendants": {
+                        "gEPhk": {
+                          "content": "Enviar mensagem"
                         }
-                      ]
+                      }
                     }
                   ]
                 }
@@ -2559,7 +1638,7 @@
             },
             {
               "type": "frame",
-              "id": "OGfC1",
+              "id": "R8zaxV",
               "name": "Info Column",
               "width": 280,
               "layout": "vertical",
@@ -2567,42 +1646,42 @@
               "children": [
                 {
                   "type": "text",
-                  "id": "D4iYF",
+                  "id": "b0sOk",
                   "name": "Info Email",
-                  "fill": "$foreground-primary",
+                  "fill": "$accent-primary",
                   "content": "oi@andrecarvalho.dev",
-                  "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
                   "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "PKR69",
+                  "id": "jTSxD",
                   "name": "Info Github",
-                  "fill": "$foreground-primary",
+                  "fill": "$accent-warm",
                   "content": "github.com/andrevrc",
-                  "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
                   "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "MT3f4",
+                  "id": "Y845J",
                   "name": "Info Twitter",
                   "fill": "$foreground-primary",
                   "content": "x.com/andrevrc",
-                  "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
                   "fontWeight": "normal"
                 },
                 {
                   "type": "text",
-                  "id": "t0Wjp",
+                  "id": "ESbxl",
                   "name": "Info Location",
                   "fill": "$foreground-secondary",
                   "content": "Recife, Brasil",
-                  "fontFamily": "$font-body",
-                  "fontSize": 15,
+                  "fontFamily": "$font-mono",
+                  "fontSize": 14,
                   "fontWeight": "normal"
                 }
               ]
@@ -2610,77 +1689,298 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "ogkz0",
+          "id": "n5dGQR",
+          "type": "ref",
+          "ref": "lCobR",
           "name": "Footer",
+          "width": "fill_container"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WRL5w",
+      "x": 0,
+      "y": -160,
+      "name": "Nav",
+      "reusable": true,
+      "width": 1440,
+      "gap": 32,
+      "padding": [
+        20,
+        48
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "Wq8dr",
+          "name": "Logo",
+          "fill": "$foreground-primary",
+          "content": "/andre",
+          "fontFamily": "$font-heading",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "X8c4Z",
+          "name": "Nav Links",
           "width": "fill_container",
-          "fill": "$surface-inverse",
-          "padding": [
-            32,
-            96
-          ],
-          "justifyContent": "space_between",
+          "gap": 24,
+          "justifyContent": "end",
           "alignItems": "center",
           "children": [
             {
               "type": "text",
-              "id": "I5Zh7K",
-              "name": "Footer Copyright",
-              "fill": "$foreground-inverse",
-              "content": "© 2026 André Carvalho",
+              "id": "ATDyY",
+              "name": "Nav about",
+              "fill": "$foreground-secondary",
+              "content": "about",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "gMClI",
+              "name": "Nav writing",
+              "fill": "$foreground-secondary",
+              "content": "writing",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "BHu9P",
+              "name": "Nav now",
+              "fill": "$foreground-secondary",
+              "content": "now",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "z1J2T",
+              "name": "Nav contact",
+              "fill": "$foreground-secondary",
+              "content": "contact",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "xGQ9n",
+              "name": "Nav divider",
+              "fill": "$border-subtle",
+              "content": "|",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "SngMb",
+              "name": "Nav github",
+              "fill": "$foreground-secondary",
+              "content": "github",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lCobR",
+      "x": 1520,
+      "y": -160,
+      "name": "Footer",
+      "reusable": true,
+      "width": 1440,
+      "fill": "$surface-card",
+      "padding": [
+        32,
+        96
+      ],
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "pRus8",
+          "name": "Footer Copyright",
+          "fill": "$foreground-secondary",
+          "content": "© 2026 André Carvalho",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "sz1R3",
+          "name": "Footer Links",
+          "gap": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "ggOkj",
+              "name": "Footer github",
+              "fill": "$foreground-secondary",
+              "content": "github",
               "fontFamily": "$font-body",
               "fontSize": 13,
               "fontWeight": "normal"
             },
             {
-              "type": "frame",
-              "id": "BB82t",
-              "name": "Footer Links",
-              "gap": 20,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "WVcRv",
-                  "name": "Footer github",
-                  "fill": "$foreground-inverse",
-                  "content": "github",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "cLKTR",
-                  "name": "Footer twitter",
-                  "fill": "$foreground-inverse",
-                  "content": "twitter",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "TzE6z",
-                  "name": "Footer email",
-                  "fill": "$foreground-inverse",
-                  "content": "email",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "text",
-                  "id": "MIGTr",
-                  "name": "Footer rss",
-                  "fill": "$foreground-inverse",
-                  "content": "rss",
-                  "fontFamily": "$font-body",
-                  "fontSize": 13,
-                  "fontWeight": "normal"
-                }
-              ]
+              "type": "text",
+              "id": "FGb8Q",
+              "name": "Footer twitter",
+              "fill": "$foreground-secondary",
+              "content": "twitter",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "rn0Xx",
+              "name": "Footer email",
+              "fill": "$foreground-secondary",
+              "content": "email",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "g8bFYD",
+              "name": "Footer rss",
+              "fill": "$foreground-secondary",
+              "content": "rss",
+              "fontFamily": "$font-body",
+              "fontSize": 13,
+              "fontWeight": "normal"
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "b5ndN1",
+      "x": 6080,
+      "y": -160,
+      "name": "Post Card",
+      "reusable": true,
+      "width": 700,
+      "fill": "$surface-card",
+      "cornerRadius": 8,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "mfk4T",
+          "name": "Category Row",
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "e0NOWA",
+              "name": "Category Badge",
+              "fill": "$accent-primary",
+              "content": "tech",
+              "fontFamily": "$font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "aHw1h",
+          "name": "Post Title",
+          "fill": "$foreground-primary",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Post Title",
+          "fontFamily": "$font-heading",
+          "fontSize": 22,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "zLKsu",
+          "name": "Post Description",
+          "fill": "$foreground-secondary",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Description goes here",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "cvCiZ",
+          "name": "Meta Row",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "I8GkSq",
+              "name": "Post Date",
+              "fill": "$foreground-secondary",
+              "content": "Jun 2026",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "L7H7kY",
+              "name": "Post Read Time",
+              "fill": "$foreground-secondary",
+              "content": "8 min read",
+              "fontFamily": "$font-mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "T7fXzN",
+      "x": 6860,
+      "y": -160,
+      "name": "Button",
+      "reusable": true,
+      "fill": "$accent-primary",
+      "cornerRadius": 6,
+      "gap": 8,
+      "padding": [
+        12,
+        24
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "gEPhk",
+          "name": "Button Label",
+          "fill": "#FFFFFF",
+          "content": "Button",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
         }
       ]
     }
@@ -2696,15 +1996,15 @@
       "type": "color",
       "value": [
         {
-          "value": "#F3EBE2",
+          "value": "#111827",
           "theme": {
-            "mode": "light"
+            "mode": "dark"
           }
         },
         {
-          "value": "#2A2520",
+          "value": "#F1F5F9",
           "theme": {
-            "mode": "dark"
+            "mode": "light"
           }
         }
       ]
@@ -2713,15 +2013,15 @@
       "type": "color",
       "value": [
         {
-          "value": "#1A1A1A",
+          "value": "#F1F5F9",
           "theme": {
-            "mode": "light"
+            "mode": "dark"
           }
         },
         {
-          "value": "#F3EBE2",
+          "value": "#0F172A",
           "theme": {
-            "mode": "dark"
+            "mode": "light"
           }
         }
       ]
@@ -2730,15 +2030,15 @@
       "type": "color",
       "value": [
         {
-          "value": "#1A1A1A",
+          "value": "#F1F5F9",
           "theme": {
-            "mode": "light"
+            "mode": "dark"
           }
         },
         {
-          "value": "#EDE8E0",
+          "value": "#0F172A",
           "theme": {
-            "mode": "dark"
+            "mode": "light"
           }
         }
       ]
@@ -2747,15 +2047,15 @@
       "type": "color",
       "value": [
         {
-          "value": "#6B6258",
+          "value": "#B0BCC8",
           "theme": {
-            "mode": "light"
+            "mode": "dark"
           }
         },
         {
-          "value": "#A09888",
+          "value": "#475569",
           "theme": {
-            "mode": "dark"
+            "mode": "light"
           }
         }
       ]
@@ -2764,15 +2064,15 @@
       "type": "color",
       "value": [
         {
-          "value": "#FFFFFF",
+          "value": "#0F172A",
           "theme": {
-            "mode": "light"
+            "mode": "dark"
           }
         },
         {
-          "value": "#1A1A1A",
+          "value": "#F1F5F9",
           "theme": {
-            "mode": "dark"
+            "mode": "light"
           }
         }
       ]
@@ -2781,15 +2081,15 @@
       "type": "color",
       "value": [
         {
-          "value": "#C5BEB6",
+          "value": "#1E293B",
           "theme": {
-            "mode": "light"
+            "mode": "dark"
           }
         },
         {
-          "value": "#3D3832",
+          "value": "#E2E8F0",
           "theme": {
-            "mode": "dark"
+            "mode": "light"
           }
         }
       ]
@@ -2798,22 +2098,22 @@
       "type": "color",
       "value": [
         {
-          "value": "#D4916E",
+          "value": "#38BDF8",
           "theme": {
-            "mode": "light"
+            "mode": "dark"
           }
         },
         {
-          "value": "#E8A882",
+          "value": "#0284C7",
           "theme": {
-            "mode": "dark"
+            "mode": "light"
           }
         }
       ]
     },
     "font-heading": {
       "type": "string",
-      "value": "Playfair Display"
+      "value": "Sora"
     },
     "font-body": {
       "type": "string",
@@ -2835,15 +2135,15 @@
       "type": "color",
       "value": [
         {
-          "value": "#FFFFFF",
+          "value": "#0B1120",
           "theme": {
-            "mode": "light"
+            "mode": "dark"
           }
         },
         {
-          "value": "#1A1815",
+          "value": "#F8FAFC",
           "theme": {
-            "mode": "dark"
+            "mode": "light"
           }
         }
       ]
@@ -2852,15 +2152,53 @@
       "type": "color",
       "value": [
         {
+          "value": "#141B2D",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
           "value": "#FFFFFF",
           "theme": {
             "mode": "light"
           }
-        },
+        }
+      ]
+    },
+    "accent-secondary": {
+      "type": "color",
+      "value": [
         {
-          "value": "#252220",
+          "value": "#A78BFA",
           "theme": {
             "mode": "dark"
+          }
+        },
+        {
+          "value": "#7C3AED",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "JetBrains Mono"
+    },
+    "accent-warm": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F59E0B",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#D97706",
+          "theme": {
+            "mode": "light"
           }
         }
       ]
